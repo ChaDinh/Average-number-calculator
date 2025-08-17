@@ -1,0 +1,20 @@
+//import scanner to take input
+import java.util.Scanner;
+public class task1 {
+    public static void main(String[] args) {
+        //declare val1 to 3 an integer
+        int val1, val2, val3;
+        double average;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter three integers" + "and I will compute their average");
+        System.out.println("Please enter the first value: ");
+        val1 = scan.nextInt();
+        System.out.println("Please enter the second value: ");
+        val2 = scan.nextInt();
+        System.out.println("Please enter the third value: ");
+        val3 = scan.nextInt();
+        //here is integer to decimal so has to had (double) conversion
+        average = (double) (val1 + val2 + val3) / 3;
+        System.out.println("The average is " + average);
+    }
+}
